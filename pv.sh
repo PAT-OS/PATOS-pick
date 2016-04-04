@@ -15,6 +15,7 @@ echo
 echo "DOWNLOADING PATOS-DESKTOP" 
 sleep 2 
 git clone https://github.com/ppigmans/PATOS
+sh ./PATOS/start
 exit 1 
 fi 
 
@@ -23,6 +24,7 @@ if [ "$name" = "PATOS-PI" ]; then
 echo 
 echo "DOWNLOADING PATOS-PI"
 git clone https://github.com/ppigmans/PATOS-PI
+sh ./PATOS-PI/start
 exit 1 
 fi 
 
@@ -39,7 +41,8 @@ fi
 echo  
 echo "DOWNLOADING PATOS-THINCLIENT" 
 sleep 2 
-git clone https://github.com/ppigmans/PATOS-THINCLIENT
+git clone https://github.com/ppigmans/PATOS-TC
+sh ./PATOS-TC/start
 exit 1 
 fi 
 
@@ -48,6 +51,7 @@ echo
 echo "DOWNLOADING PATOS ON THE GO" 
 sleep 2 
 git clone https://github.com/ppigmans/PATOS-OTG
+sh ./PATOS-OTG/start
 exit 1 
 fi 
 
@@ -56,6 +60,7 @@ echo
 echo "DOWNLOADING PATOS-SERVER" 
 sleep 2 
 git clone https://github.com/ppigmans/PATOS-SERVER
+sh ./PATOS-SERVER/start
 exit 1 
 fi 
 
